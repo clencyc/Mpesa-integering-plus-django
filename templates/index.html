@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Online Education</title>
+<link href="{% static "css/style.css" %} rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="mainPan">
+  <div id="leftPan">
+    <ul class="one">
+      <li class="home">Home</li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="create.html">Create account</a></li>
+      <li><a href="payments.html">Pay</a></li>
+      <li><a href="#">books</a></li>
+      <li><a href="#">discount</a></li>
+      <li><a href="#">realeses</a></li>
+      <li class="contact"><a href="#">contact</a></li>
+    </ul>
+    <div id="fastformPan">
+      <form action="#" method="get" class="formone">
+        <h2>search</h2>
+        <select name="category" id="category">
+          <option>CATAGORY</option>
+        </select>
+        <select name="author" id="author">
+          <option>AUTHOR</option>
+        </select>
+        <label>English</label>
+        <input name="search" type="radio" class="check" value="search" />
+        <label>French</label>
+        <input name="search" type="radio" class="check" value="French" />
+        <div id="submitPan">
+          <input type="submit" class="input" value="SEARCH" />
+        </div>
+      </form>
+    </div>
+    <h3>new books</h3>
+    <ul class="two">
+      <li><a href="#">Loremipsum sit</a></li>
+      <li><a href="#">Ametcon</a></li>
+      <li><a href="#">Adipiscing elit </a></li>
+      <li><a href="#">Morbifert urnadui </a></li>
+      <li><a href="#">Posuereac</a></li>
+      <li><a href="#">Convallis vitae</a></li>
+    </ul>
+    <div id="secondformPan">
+      <form action="#" method="post" class="formtwo">
+        <h2>newsletter</h2>
+        <input name="" type="text" />
+        <input name="" type="submit" class="input" value="SUBMIT" />
+      </form>
+    </div>
+  </div>
+  <div id="rightPan">
+    <div id="topPan"> <a href="#"><img src="{% static "images/logo.gif" %} title="Online Education" alt="Online Education" width="213" height="30" border="0"  class="logo"/></a>
+      <ul>
+        <li class="pen"><a href="#">pen</a></li>
+        <li class="book"><a href="#">book</a></li>
+        <li class="calculator"><a href="#">calculator</a></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <div id="bodyPan">
+      <h2>events</h2>
+      <p class="contant1">Online Education is a free, tableless, W3C-compliant web design layout by Template World. This template has been tested and proven compatible with all major browser environments and operating systems. You are free to modify the design to suit your tastes in any way you like.</p>
+      <p class="more"><a href="#">read more</a></p>
+      <p class="contant2">We only ask you to not remove "Design by Template World" and the link http://www.templateworld.com from the footer of the template. If you are interested in seeing more of our free web template designs feel free to visit our website, Template World. We intend to add at least 25 new free templates in the coming month.</p>
+      <p class="more"><a href="#">read more</a></p>
+      <p class="contant3">We only ask you to not remove "Design by Template World" and the link http://www.templateworld.com from the footer of the template. If you are interested in seeing more of our free web template designs feel free to visit our website, Template World. We intend to add at least 25 new free templates in the coming month.</p>
+      <p class="more"><a href="#">read more</a></p>
+      <div id="bodylowerPan">
+        <div id="bodylowerLeftPan">
+          <h3>future plans</h3>
+          <p>Online Education is a free, tableless, W3C-compliant web design layout by Template World. This template has been tested and proven compatible with all major browser environments and operating systems. You are free to modify the design to suit your tastes in any way you like.</p>
+          <ul class="list">
+            <li><a href="#">Lorem ipsum dolor sit amet,consectetuer</a></li>
+            <li><a href="#">adipiscing elit.Morbifert urna dui,posuere.</a></li>
+            <li><a href="#">convallis vitae,</a></li>
+          </ul>
+          <p class="more"><a href="#">view more</a></p>
+        </div>
+        <div id="bodylowerRightPan">
+          <h4>services links</h4>
+          <ul>
+            <li><a href="#">Lorem ipsum lorsit</a></li>
+            <li><a href="#">Amet, consectetuer</a></li>
+            <li><a href="#">Adipiscing elit.</a></li>
+            <li><a href="#">Morbifert urna dui,</a></li>
+            <li class="lastlink"><a href="#">Posuere acconvallis </a></li>
+          </ul>
+          <p class="more"><a href="#">know more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footermainPan">
+  <div id="footerPan">
+    <ul>
+      <li><a href="#">home</a>| </li>
+      <li><a href="#">about us</a>| </li>
+      <li><a href="#">services</a>| </li>
+      <li><a href="#">univercity</a>| </li>
+      <li><a href="#">books</a>| </li>
+      <li><a href="#">discount</a>| </li>
+      <li><a href="#">realeses</a>| </li>
+      <li><a href="#">contact</a> </li>
+    </ul>
+    <p class="copyright">©online education. All right reserved.</p>
+    <ul class="templateworld">
+      <li>design by:</li>
+      <li><a href="http://www.templateworld.com" target="_blank">Template World</a></li>
+    </ul>
+    <div id="footerPanhtml"><a href="http://validator.w3.org/check?uri=referer" target="_blank">XHTML</a></div>
+    <div id="footerPancss"><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">css</a></div>
+  </div>
+</div>
+</body>
+</html>
