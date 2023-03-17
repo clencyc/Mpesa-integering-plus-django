@@ -42,11 +42,11 @@ def index(request):
     context = {"data": data}
     return render(request, "index.html")
 
-def create(request):
-    return render(request, "create.html")
-
 def edit(request):
     return render(request, "edit.html")
+
+def home_page(request):
+    return render(request, "home.html")
 
 
 def login_page(request):
@@ -71,6 +71,8 @@ def insertData(request):
         query = Student(name=name, email=email, age=age, country=country, city=city, amount=amount, gender=gender)
         query.save()
         return redirect("/")
+
+        return render(request, 'index.html')
 
 
 
