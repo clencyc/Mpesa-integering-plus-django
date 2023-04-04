@@ -40,7 +40,7 @@ def pay(request):
 def index(request):
     data = Student.objects.all()
     context = {"data": data}
-    return render(request, "index.html")
+    return render(request, "index.html", context)
 
 def edit(request):
     return render(request, "edit.html")

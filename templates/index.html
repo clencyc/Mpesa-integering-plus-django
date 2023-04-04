@@ -1,15 +1,15 @@
 <html lang="en">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <head>
+        {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student management system</title>
+    <title>Hospital management system</title>
+        <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
   </head>
-  <body style="background-color: cyan">
-<div class="apple">
-    <h1>Apple University</h1>
-</div>
+  <body class="insert">
 
+  <a href="{% url 'home' %}">Home</a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-md">
 
@@ -25,7 +25,7 @@
                 <h2>Create profile</h2>
                 <br>
 
-                <form action="/insert" method="post">
+                <form action="/insert" method="POST">
                     {% csrf_token %}
 
                     <div class="form-group">
@@ -89,7 +89,7 @@
                         <th scope="col">gender</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
-                        <th scope="col">pay</th>
+                        <th scope="col">Pay</th>
 
                       </tr>
                     </thead>
@@ -105,9 +105,7 @@
                         <td>{{d.city}}</td>
                         <td>{{d.amount}}</td>
                         <td>{{d.gender}}</td>
-                        <td>{{d.Edit}}</td>
-                        <td>{{d.Delete}}</td>
-                        <td>{{d.Pay}}</td>
+
 
                         <td><a href="/update/{{d.id}}" type="button" class="btn btn-outline-warning">Edit</a></td>
                         <td><a href="/delete/{{d.id}}" type="button" class="btn btn-outline-danger">Delete</a></td>
@@ -123,10 +121,21 @@
 
       </div>
 
-<div style="background-size: cover">
-    {% load static %}
-    <img src="{% static "images/img2.png" %}" alt="">
+   <div class="flex-container">
+  <div><img src="{% static 'images/slider/hsp.jpeg' %}" style="height: 300px; width: 300px" alt="">
+  <p>The Medical Services Division coordinates and manages Paediatrics, Cardiology, Mental Health, Nutrition, Social Work, Cancer Treatment Centre, Renal, Respiratory Infectious Disease Unit, Endoscopy, Comprehensive Care Centre, Endocrinology/Diabetes Centre and Haemophilia. </p>
+  </div>
+  <div> <img src="{% static 'images/slider/child care.jpg' %}" style="height: 300px; width: 300px" alt="">
+  <p>Children's Hospital is licensed and recognised as a Level 5 Healthcare Facility, a Tertiary Referral and Teaching Children's Hospital. The hospital operates on a self-sustaining financing model through charging fee for services.</p>
+  </div>
+  <div> <img src="{% static 'images/slider/emergency.jpeg' %}" style="height: 300px; width: 300px" alt="">
+  <p>Emergency management functions have four distinct phases: Mitigation, Preparedness, Response, and Recovery. Emergency management functions are often based on the Prevention, Preparedness, Response and Recovery (PPRR) model.</p>
+  </div>
 </div>
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
